@@ -13,5 +13,8 @@ def urCommand(string,sock=r):
 	sock.send(byteString)
 	data = sock.recv(1024)
 	return data
+def connectAll():
+    r.connect((RIGHT, PORT))
+    l.connect((LEFT,PORT))
 
 
